@@ -33,6 +33,7 @@ const color = computed(() =>
     <div
       :class="color"
       :style="{ width: `${width}%` }"
+      data-test="strength-progress-bar"
       class="flex h-full rounded transition-all duration-500 ease-in-out"
     />
   </div>

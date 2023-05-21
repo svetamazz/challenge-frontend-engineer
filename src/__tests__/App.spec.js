@@ -2,9 +2,7 @@ import { describe, it, beforeEach, expect } from "vitest";
 import { mount } from "@vue/test-utils";
 
 import App from "@/App.vue";
-import { createPinia } from "pinia/dist/pinia";
 import { RULE } from "@/domain/password/rules";
-import { useStrongPasswordStore } from "@/stores/strong-password";
 import {
   StrengthOption,
   StrengthOptionLabel,
@@ -23,12 +21,7 @@ describe("App", () => {
   };
 
   beforeEach(() => {
-    wrapper = mount(App, {
-      global: {
-        plugins: [createPinia()],
-      },
-    });
-    useStrongPasswordStore();
+    wrapper = mount(App);
   });
 
   it("should render", () => {
