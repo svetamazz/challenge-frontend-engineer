@@ -1,3 +1,4 @@
+### 🎉 https://password-strength-checker-challenge.vercel.app/
 # Strong Password Input Challenge
 
 Within this challenge your objective will be to develop a complete project.
